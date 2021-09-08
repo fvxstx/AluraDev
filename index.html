@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            <img  src="/images/image.png" alt="Logo">
+        </h1>
+
+        <input class="model-input" type="search" placeholder="Search for something">
+
+        <div class="profile-container">
+            <img src="/images/minhacara.jpg" alt="Profile Photo" />
+            <p>Fausto</p>
+        </div>
+    </header>
+    
+    <main>
+        <nav class="menu">
+            <h2 class="category">menu</h2>
+            <ul>
+                <li>
+                    <a href="/">
+                        <img src="/images/icons/icon_code.svg" alt="" class="selected">
+                        Code editor
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img src="/images/icons/icon_users.svg" alt="">
+                        Communities
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-container">
+            <div class="container-code">
+                <div class="header-code">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <label for="code" hidden>Code</label>
+                <textarea name="code" id="code" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="btn-highlight">View with highlight</button>
+        </div>
+
+        <aside>
+            <form id="project" action="" class="create-project">
+                <fieldset class="box-create">
+                    <legend class="category">Your project</legend>    
+
+                    <input type="text" class="model-input" name="name" id="name" placeholder="Project Name"> 
+                    <label for="name" hidden>Project Name</label>
+
+                    <label for="description" hidden>Description</label>
+                    <textarea class="model-input" name="description" id="description" placeholder="Project Description"></textarea>
+                </fieldset>
+                
+                <fieldset class="box-create">
+                    <legend class="category">Personalization</legend>
+
+                    <select name="language" id="language" class="model-input"> 
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">CSS</option>
+                        <option value="C++">HTML</option>
+                    </select>
+                    <label for="language" hidden>Language</label>
+
+                    <label for="color" hidden>Color</label>
+                    <input type="color" class="model-input" id="color" name="color" value="#6bd1ff">
+                </fieldset>
+
+                <button class="btn-submit" type="submit" form="project">Save your project</button>
+            </form> 
+        </aside>
+    </main>
+
+</body>
+</html>

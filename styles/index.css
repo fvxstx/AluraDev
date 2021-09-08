@@ -1,0 +1,122 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 2rem;
+}
+
+.menu,
+.create-project {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.menu li a > img {
+  padding: 0.5rem;
+  margin-right: 0.7rem;
+  background: rgba(80, 129, 251, 0.16);
+  border-radius: 13px;
+}
+.menu li a > .selected {
+  background: #5081fb;
+}
+
+.create-project .box-create {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.create-project .box-create #description {
+  min-height: 60px;
+  resize: none;
+  padding-top: 0.7rem;
+}
+
+.create-project .box-create #color {
+  border: 1px solid #ffffff;
+  background: #051d3b;
+  padding: 0.2rem;
+}
+
+.create-project .box-create legend + .model-input {
+  margin-top: 1rem;
+}
+
+.create-project .btn-submit {
+  height: 56px;
+  background: #5081fb;
+  border-radius: 8px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin: 0 2rem;
+}
+
+.main-container .container-code {
+  width: 100%;
+  height: auto;
+  border: 25px solid #6bd1ff;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: #000000;
+
+  text-align: left;
+}
+
+.main-container .container-code .header-code {
+  display: flex;
+  gap: 0.4rem;
+  background-color: #000000;
+}
+
+.main-container .container-code .header-code .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.main-container .container-code .header-code .dot:nth-child(1) {
+  background: #ff0000;
+}
+
+.main-container .container-code .header-code .dot:nth-child(2) {
+  background: #ffff00;
+}
+
+.main-container .container-code .header-code .dot:nth-child(3) {
+  background: #00ff00;
+}
+
+.main-container .container-code #code {
+  width: 100%;
+  height: 300px;
+  padding-top: 1rem;
+
+  font-size: 14px;
+
+  resize: none;
+  background-color: #000000;
+}
+
+.main-container .btn-highlight {
+  width: 100%;
+  height: 56px;
+  background-color: rgba(80, 129, 251, 0.08);
+  border-radius: 8px;
+}

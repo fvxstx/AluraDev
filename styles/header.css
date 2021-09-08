@@ -1,0 +1,36 @@
+header {
+  height: 60px;
+  margin: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2rem;
+}
+
+header img {
+  height: 100%;
+}
+
+header .title {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+header .profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5em;
+  flex: 1;
+}
+
+header .profile-container img {
+  border-radius: 50%;
+}
+
+header .model-input {
+  margin: 0 2rem;
+  flex: 3;
+}
