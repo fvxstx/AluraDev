@@ -1,0 +1,60 @@
+main {
+  display: flex;
+  margin: 2rem;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.main .container {
+  background: rgba(0, 0, 0, 0.16);
+  height: 100%;
+  border-radius: 8px;
+}
+
+.main .container .container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+}
+
+.main .container .container-text > h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.main .container .container-text > p {
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.main .container .container-text .text-icons {
+  margin-top: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.main .container .container-text .text-icons .contain-flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main .container .container-text .text-icons .contain-flex .face-icon {
+  max-height: 22px;
+  border-radius: 50%;
+}
+
+.main .container .container-text .text-icons .flex-icons {
+  display: flex;
+  gap: 1.1rem;
+}

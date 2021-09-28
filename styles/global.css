@@ -10,13 +10,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: #051d3b;
+
   text-decoration: none;
 }
 
 body {
   width: 100%;
   height: 100%;
+  background: #051d3b;
 }
 
 input,
@@ -25,7 +26,11 @@ a,
 h2,
 legend,
 button,
-textarea {
+textarea,
+code,
+h3,
+h4,
+h5 {
   color: #ffffff;
 }
 
@@ -33,8 +38,11 @@ button {
   cursor: pointer;
 }
 
+option {
+  color: #000000;
+}
+
 .model-input {
-  max-width: 750px;
   min-height: 50px;
   background-color: rgba(255, 255, 255, 0.16);
   border-radius: 8px;
@@ -45,9 +53,13 @@ button {
 .model-input::placeholder,
 select {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 200;
   color: #ffffffff;
   opacity: 0.4;
+}
+
+.model-input:focus {
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .category {
@@ -55,4 +67,11 @@ select {
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 0.4em;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1025px) {
+  main .hidden {
+    display: none;
+  }
 }

@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.menu li a > img {
+  padding: 0.5rem;
+  margin-right: 0.7rem;
+  background: rgba(80, 129, 251, 0.16);
+  border-radius: 13px;
+}
+.menu li a > .selected {
+  background: #5081fb;
+}
+
+.menu li a > img:hover {
+  background: rgba(80, 129, 251, 0.64);
+}

@@ -1,0 +1,117 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin: 0 2.9rem;
+}
+
+.main-container .btn-highlight {
+  width: 100%;
+  height: 56px;
+  background-color: rgba(80, 129, 251, 0.08);
+  border-radius: 8px;
+}
+
+.main-container .btn-highlight:hover {
+  background-color: rgba(80, 129, 251, 0.16);
+}
+
+.main-container .btn-highlight:active {
+  border: 4px solid rgba(80, 129, 251, 0.16);
+}
+
+.main-container .btn-highlight:focus {
+  background: rgba(80, 129, 251, 0.24);
+}
+
+.create-project {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.create-project .box-create {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.create-project .box-create #description {
+  min-height: 60px;
+  resize: none;
+  padding-top: 0.7rem;
+}
+
+.create-project .box-create #color {
+  border: 1px solid #ffffff;
+  background: #051d3b;
+  padding: 0.2rem;
+}
+
+.create-project .box-create legend + .model-input {
+  margin-top: 1rem;
+}
+
+.create-project .btn-submit {
+  height: 56px;
+  background: rgba(80, 129, 251, 1);
+  color: #000000;
+  border-radius: 8px;
+}
+
+.create-project .btn-submit:hover {
+  background: rgba(123, 164, 252, 1);
+}
+
+.create-project .btn-submit:active {
+  border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+.create-project .btn-submit:focus {
+  background: rgba(150, 185, 253, 1);
+}
+
+@media screen and (max-width: 1025px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .main-container {
+    margin: 1rem 0;
+  }
+
+  .project-container {
+    margin: 1.5rem 0;
+  }
+
+  .create-project .box-create:nth-child(2) {
+    flex-direction: row;
+    align-items: center;
+  }
+  .create-project .box-create #color {
+    margin: 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .create-project .box-create:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .create-project .box-create #color {
+    margin: 0;
+  }
+}
