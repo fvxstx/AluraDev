@@ -40,19 +40,19 @@
     </header>
 
     <main>
-        <aside>
+        <aside class="menu-aside">
             <nav class="menu hidden">
                 <h2 class="category">menu</h2>
                 <ul>
                     <li>
                         <a href="/">
-                            <img src="/images/icons/icon_code.svg" alt="" class="selected">
+                            <img src="/images/icons/icon_code.svg" alt="">
                             Code editor
                         </a>
                     </li>
                     <li>
                         <a href="/comunities.html">
-                            <img src="/images/icons/icon_users.svg" alt="">
+                            <img src="/images/icons/icon_users.svg" alt="" class="selected">
                             Communities
                         </a>
                     </li>
@@ -61,46 +61,6 @@
         </aside>
 
         <div class="main">
-            
-            <div class="container">
-                <div class="container-code">
-                    <div class="header-code">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-    
-                    <div class="main-code">
-                        <code class="preview" contenteditable="true" aria-label="Code editor" spellcheck="false">function test() {}</code>
-                    </div>
-                </div>
-
-                <div class="container-text">
-                    <h3>Título do projeto</h3>
-
-                    <p>Essa é a descrição do meu projeto</p>
-
-                    <div class="text-icons">
-                        <div class="flex-icons">
-                            <div class="contain-flex"> 
-                                <img src="/images/icons/icon_coment.svg" alt="">
-                                <p>9</p>
-                            </div>
-        
-                            <div class="contain-flex">
-                                <img src="/images/icons/icon_favorite.svg" alt="">
-                                <p>9</p>
-                            </div>
-                        </div>
-
-                        <div class="contain-flex">
-                            <img class="face-icon" src="/images/minhacara.jpg" alt="">
-                            <p>@Harry</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <div class="container">
                 <div class="container-code">
@@ -122,15 +82,17 @@
 
                     <div class="text-icons">
                         <div class="flex-icons">
-                            <div class="contain-flex"> 
+                            <button class="contain-flex"> 
                                 <img src="/images/icons/icon_coment.svg" alt="">
                                 <p>9</p>
-                            </div>
-        
-                            <div class="contain-flex">
-                                <img src="/images/icons/icon_favorite.svg" alt="">
+                            </button>
+                            
+                            <button class="contain-flex btn-favorite">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-favorite" d="M18.0587 1.44659C15.9181 -0.377597 12.7346 -0.0494787 10.7698 1.97783L10.0003 2.77078L9.23077 1.97783C7.26987 -0.0494787 4.08243 -0.377597 1.94185 1.44659C-0.51123 3.5403 -0.640134 7.29804 1.55514 9.56752L9.11359 17.3721C9.60186 17.876 10.3948 17.876 10.8831 17.3721L18.4415 9.56752C20.6407 7.29804 20.5118 3.5403 18.0587 1.44659Z" fill="white"/>
+                                </svg>
                                 <p>9</p>
-                            </div>
+                            </button>
                         </div>
 
                         <div class="contain-flex">
@@ -140,22 +102,61 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="container">
+                <div class="container-code">
+                    <div class="header-code">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+    
+                    <div class="main-code">
+                        <code class="preview" contenteditable="true" aria-label="Code editor" spellcheck="false">function test() {}</code>
+                    </div>
+                </div>
+
+                <div class="container-text">
+                    <h3>Título do projeto</h3>
+
+                    <p>Essa é a descrição do meu projeto</p>
+
+                    <div class="text-icons">
+                        <div class="flex-icons">
+                            <button class="contain-flex"> 
+                                <img src="/images/icons/icon_coment.svg" alt="">
+                                <p>9</p>
+                            </button>
+                            
+                            <button class="contain-flex btn-favorite">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="icon-favorite" d="M18.0587 1.44659C15.9181 -0.377597 12.7346 -0.0494787 10.7698 1.97783L10.0003 2.77078L9.23077 1.97783C7.26987 -0.0494787 4.08243 -0.377597 1.94185 1.44659C-0.51123 3.5403 -0.640134 7.29804 1.55514 9.56752L9.11359 17.3721C9.60186 17.876 10.3948 17.876 10.8831 17.3721L18.4415 9.56752C20.6407 7.29804 20.5118 3.5403 18.0587 1.44659Z" fill="white"/>
+                                </svg>
+                                <p>9</p>
+                            </button>
+                        </div>
+
+                        <div class="contain-flex">
+                            <img class="face-icon" src="/images/minhacara.jpg" alt="">
+                            <p>@Harry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
 
         <aside class="modal hidden">
             <nav class="menu">
                 <ul>
                     <li>
                         <a href="/">
-                            <img src="/images/icons/icon_code.svg" alt="" class="selected">
+                            <img src="/images/icons/icon_code.svg" alt="">
                             Code editor
                         </a>
                     </li>
                     <li>
                         <a href="/comunities.html">
-                            <img src="/images/icons/icon_users.svg" alt="">
+                            <img src="/images/icons/icon_users.svg" alt="" class="selected">
                             Communities
                         </a>
                     </li>
@@ -171,6 +172,7 @@
         </aside>
     </main>
 
-    <script src="/modal.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/comunities.js"></script>
 </body>
 </html>

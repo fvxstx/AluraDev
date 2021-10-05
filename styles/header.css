@@ -6,7 +6,6 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  gap: 2rem;
 }
 
 header .title {
@@ -97,5 +96,9 @@ header #searchForm {
 
   .profile-container button {
     display: block;
+  }
+
+  header .title img {
+    width: 8rem;
   }
 }

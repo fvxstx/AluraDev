@@ -18,9 +18,12 @@
   margin-right: 0.7rem;
   background: rgba(80, 129, 251, 0.16);
   border-radius: 13px;
+
+  opacity: 0.5;
 }
 .menu li a > .selected {
   background: #5081fb;
+  opacity: 1;
 }
 
 .menu li a > img:hover {

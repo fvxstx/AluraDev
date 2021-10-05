@@ -10,7 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+  background: none repeat scroll 0 0 transparent;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ select {
 }
 
 @media screen and (max-width: 1025px) {
-  main .hidden {
+  .menu-aside {
     display: none;
   }
 }
